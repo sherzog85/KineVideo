@@ -1,0 +1,1 @@
+void mciCmd(LPCSTR command);

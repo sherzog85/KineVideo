@@ -1,0 +1,38 @@
+//Ressourcen-Skriptedatei *.rc
+
+
+#include <windows.h>
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////
+//
+// Menü
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Datei"
+    BEGIN
+        MENUITEM "Öffnen",             ID_FILE_OPEN
+		MENUITEM "Daten in Textdatei exportieren", ID_FILE_EXPORT 
+		MENUITEM "Daten in Excel-XML-Format exportieren", ID_FILE_XML
+        MENUITEM "Ende",               ID_FILE_EXIT
+    END
+    POPUP "Koordinatensystem"	
+    BEGIN
+	    MENUITEM "Video zoomen",             ID_ZOOM CHECKED
+        MENUITEM "Drehen",             ID_COORD_ROTATE
+		MENUITEM "Flugbahn einzeichnen",             ID_PARABEL 
+		MENUITEM "Bild zurücksetzen",             ID_COORD_BACK 
+	END
+END
+
+ID_CURSOR              ICON     "media\cross.ico"
+ID_APP                 ICON     "media\film.ico"
+IDI_FOR                ICON     "media\for.ico"
+IDI_BACK                ICON     "media\back.ico"
+IDI_NULL               ICON     "media\null.ico"
+IDI_NULLT               ICON     "media\clock.ico"
+IDI_CALI               ICON     "media\ruler.ico"
+ID_CROSS1              ICON     "media\cross1.ico"
+ID_CROSS2              ICON     "media\cross2.ico"
